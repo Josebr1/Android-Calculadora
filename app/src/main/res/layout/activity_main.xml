@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.treinaweb.calculadora.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n7"
+                android:id="@+id/sete"
+                android:onClick="number"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n8"
+                android:id="@+id/oito"
+                android:onClick="number"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n9"
+                android:layout_weight="1"
+                android:onClick="number"
+                android:id="@+id/nove"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divisao"
+                android:layout_weight="1"
+                android:onClick="operadores"
+                android:id="@+id/divisao"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n4"
+                android:id="@+id/quatro"
+                android:onClick="number"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n5"
+                android:id="@+id/cinco"
+                android:onClick="number"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n6"
+                android:layout_weight="1"
+                android:onClick="number"
+                android:id="@+id/seis"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multiplicacao"
+                android:layout_weight="1"
+                android:onClick="operadores"
+                android:id="@+id/multiplicao"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n1"
+                android:id="@+id/um"
+                android:onClick="number"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n2"
+                android:id="@+id/dois"
+                android:onClick="number"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n3"
+                android:layout_weight="1"
+                android:onClick="number"
+                android:id="@+id/tres"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtracao"
+                android:layout_weight="1"
+                android:onClick="operadores"
+                android:id="@+id/subtracao"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/limpa"
+                android:id="@+id/cancelar"
+                android:onClick="cancelar"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n0"
+                android:id="@+id/zero"
+                android:onClick="number"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/igual"
+                android:layout_weight="1"
+                android:onClick="resultado"
+                android:id="@+id/igual"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soma"
+                android:layout_weight="1"
+                android:onClick="operadores"
+                android:id="@+id/soma"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewRes"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editText" />
+</RelativeLayout>
